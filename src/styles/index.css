@@ -1,3 +1,59 @@
-.container{
-    background-color: aqua;
+body {
+    background-image: url('../img/notas.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 5%; 
 }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.list-group-item {
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.icon-container {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.list-group-item:hover .icon-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: red;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
